@@ -3,98 +3,26 @@
         <Hero />
         <HeroVideo />
 
-     
-
-        <main id="main">
-          <section id="team" class="team">
-  
-            <div class="container" data-aos="fade-up">
-      
-              <header class="section-header">
-                <p>Narasumber</p>
-               
-              </header>
-      
-              <div class="row gy-4">
-      
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="/assets/images/rdtheo.png" class="img-fluid" alt="">
-                      <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                    <div class="member-info">
-                      <h4>RD. Robertus Theo Elno Respati</h4>
-                      <span>Ketua Komisi Komunikasi Sosial Keuskupan Surabaya</span>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="/assets/images/brams.png" class="img-fluid" alt="">
-                      <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                    <div class="member-info">
-                      <h4>Valens Brama P.</h4>
-                      <span>Director Film</span>
-                       </div>
-                  </div>
-                </div>
-      
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="/assets/images/ohbert.png" class="img-fluid" alt="">
-                      <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                    <div class="member-info">
-                      <h4>Angelica Ohbert P.</h4>
-                      <span>Produser Film</span>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="/assets/images/jenifer.png" class="img-fluid" alt="">
-                      <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
-                    </div>
-                    <div class="member-info">
-                      <h4>Jenifer Odilia</h4>
-                      <span>Content Creator</span>
-                      </div>
-                  </div>
-                </div>
-      
-              </div>
-      
+        <!-- Latar Belakang -->
+        <div class="section-excerpt">
+          <div class="d-flex align-content-center">
+            <h2>Latar Belakang</h2>
+            <p>Kesadaran Gereja akan pentingnya merasul lewat media sosial dapat ditemukan dalam Dekrit Inter Mirifica Konsili Vatikan II. Kesadaran itu terungkap dalam artikel 2: “Bunda Gereja menyadari, bahwa upaya-upaya itu, kalau digunakan dengan tepat, dapat berjasa besar bagi umat manusia, sebab sangat membantu untuk menyegarkan hati dan mengembangkan budi, dan untuk menyiarkan serta memantapkan Kerajaan Allah. Kepentingan Gereja terhadap dunia media sosial adalah mewartakan Injil.”</p>
+          </div>
+            <div class="col-12 col-sm-6 section-introduction">
             </div>
-      
-          </section>
-        </main>
+           
+        </div>
+
+        <!-- Tema -->
+        <div class="section-theme">
+            <h1>Tema</h1>
+            <p>Tema Festival Film tahun 2024 sesuai dengan fokus pastoral Keuskupan Surabaya ialah Gereja yang Satu Kudus Katolik Apostolik.</p>
+        </div>
+
+        <div class="section-teams">
+			<Teams />
+        </div>
     </div>
 </template>
 

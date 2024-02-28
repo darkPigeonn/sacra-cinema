@@ -1,5 +1,12 @@
 <template>
     <div>
+        <Navbar />
         <slot />
-    </div>
+
+ <!-- Vendor JS Files -->
+ 
+ <!-- Template Main JS File -->
+
+</div>
 </template>
+

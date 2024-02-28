@@ -1,16 +1,13 @@
 <template>
     <nav class="navbar">
-      <div class="navbar-brand">
-        <span class="navbar-title">Sacra Cinema</span>
-      </div>
       <button class="toggle-btn" @click="toggleNavbar">
         <i class="fas fa-bars" v-if="!navbarOpen"></i>
         <i class="fas fa-times" v-else></i>
       </button>
       <ul class="navbar-menu" :class="{ 'navbar-open': navbarOpen }">
-        <li><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a></li>
-        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Panitia</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
       </ul>
     </nav>
   </template>
@@ -34,13 +31,13 @@
   .navbar {
     position: static;
     height: 50px;
-    background-color: #333;
-    color: #fff;
+    color: #C6972D;
     display: flex;
+
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
-    position: fixed;
+   
     top: 0;
     left: 0;
     right: 0; /* agar navbar menutup di seluruh lebar layar */
@@ -58,7 +55,7 @@
 
   .toggle-btn {
     background-color: transparent;
-    color: #fff;
+    color: #C6972D;
     border: none;
     cursor: pointer;
   }
@@ -71,10 +68,12 @@
 
   .navbar-menu li {
     margin-right: 20px;
+    font-size: 20px;
   }
 
   .navbar-menu li a {
-    color: #fff;
+    color: #C6972D;
+    font-weight: bold;
     text-decoration: none;
   }
 
