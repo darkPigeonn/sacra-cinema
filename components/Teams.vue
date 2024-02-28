@@ -1,7 +1,7 @@
 <template>
 
 	<div class="responsive-container-block outer-container">
-		<div class="responsive-container-block inner-container">
+		<!-- <div class="responsive-container-block inner-container">
 			<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-4 wk-ipadp-4 headings-container">
 			<p class="text-blk heading-text">
 				Para Pembicara
@@ -57,7 +57,7 @@
 			</div>
 
 			</div>
-		</div>
+		</div> -->
 		</div>
 </template>
 
