@@ -3,20 +3,20 @@
         <Hero />
         <HeroVideo />
 
-     
+
 
         <main id="main">
           <section id="team" class="team">
-  
+
             <div class="container" data-aos="fade-up">
-      
+
               <header class="section-header">
                 <p>Narasumber</p>
-               
+
               </header>
-      
+
               <div class="row gy-4">
-      
+
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                   <div class="member">
                     <div class="member-img">
@@ -34,7 +34,7 @@
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                   <div class="member">
                     <div class="member-img">
@@ -52,7 +52,7 @@
                        </div>
                   </div>
                 </div>
-      
+
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                   <div class="member">
                     <div class="member-img">
@@ -70,7 +70,7 @@
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
                   <div class="member">
                     <div class="member-img">
@@ -88,11 +88,15 @@
                       </div>
                   </div>
                 </div>
-      
+
               </div>
-      
+
             </div>
-      
+
+          </section>
+
+          <section>
+            <Timeline />
           </section>
         </main>
     </div>
