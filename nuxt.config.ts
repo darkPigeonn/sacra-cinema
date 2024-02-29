@@ -3,12 +3,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app : {
     head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      meta: [
+        { name: 'description', content: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024' }
+      ],
       script: [
         {
           src: 'https://kit.fontawesome.com/94c81be855.js',
           crossorigin: 'anonymous',
         },
       ],
+      link: [{ rel: 'icon', type: 'image/png', href: '/assetsimages/logo.png' }]
     },
   },
   css: [
