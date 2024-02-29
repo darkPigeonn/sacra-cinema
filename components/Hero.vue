@@ -4,9 +4,10 @@
                         <div class="col-xxl-5">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
-                                <div class="fs-3 fw-light text-muted">Kolaborasi Komisi Komsos dan Komisi Bidang Formatio</div>
-                                <h1 class="display-3 fw-bolder">
-                                    <span class="">Sacra Cinema</span>
+                                <div class="fs-3 fw-light text-muted">Festival Film Keuskupan Surabaya</div>
+                                <p style="color : grey"> Kolaborasi Komisi Komsos dan Komisi Bidang Formatio</p>
+                                <h1 class="display-1 fw-bolder">
+                                    <span class=""> SACRA CINEMA</span>
                                 </h1>
                                     <p class="">"Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"</p>
 
