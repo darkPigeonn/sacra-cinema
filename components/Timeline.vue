@@ -70,7 +70,7 @@
 body{
     margin : 0;
     font-family: sans-serif;
-    background : #F9EEC3;
+    /* background : #F9EEC3; */
     position: absolute;
     padding: 2em;
     color: #C6972D;
@@ -97,7 +97,7 @@ h1 {
     font-size: 3em;
 }
 h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 .title {

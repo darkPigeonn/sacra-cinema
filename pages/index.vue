@@ -3,7 +3,7 @@
         <Hero />
         <HeroVideo />
 
-
+        <Timeline2 />
 
         <main id="main">
           <section id="team" class="team">
@@ -11,7 +11,7 @@
             <div class="container" data-aos="fade-up">
 
               <header class="section-header">
-                <p>Narasumber</p>
+                <p style="color:#C6972D">Narasumber</p>
 
               </header>
 
@@ -103,6 +103,21 @@
 </template>
 
 <style lang="scss" scoped>
+p h4 span{
+  color : #C6972D
+}
+.member-info h4{
+  color : #C6972D!important;
+}
+.values {
+  margin : 0;
+    font-family: sans-serif;
+    background : #F9EEC3;
+    position: absolute;
+    padding: 2em;
+    color: #C6972D;
+    width: 100%;
+}
 .section-theme {
     padding: 2%;
     align-content: center;
