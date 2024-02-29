@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app : {
     head: {
+      title: 'Sacra Cinema',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       meta: [
@@ -14,7 +15,7 @@ export default defineNuxtConfig({
           crossorigin: 'anonymous',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/assetsimages/logo.png' }]
+      link: [{ rel: 'icon', type: 'image/png', href: '/assets/images/logo.png' }]
     },
   },
   css: [
