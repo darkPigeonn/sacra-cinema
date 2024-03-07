@@ -1,5 +1,5 @@
 <template>
-    <div class="tema">
+    <div class="tema" data-aos="zoom-in">
         <div class="title">
             <h3>Tema Festival Film Keuskupan Surabaya 2024</h3>
             <h2>"Gereja yang Satu, Kudus, Katolik, dan Apostolik."</h2>

@@ -11,11 +11,14 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "compass": "^0.1.1",
+    "compass-mixins": "^0.12.12",
     "nuxt": "^3.10.3",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "nuxt-aos": "^1.2.4",
     "sass": "^1.71.1"
   }
 }

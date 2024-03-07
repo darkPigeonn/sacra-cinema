@@ -3,7 +3,9 @@
         <Hero />
         <HeroVideo />
 
-        <Timeline2 />
+        <div data-aos="flip-up">
+          <Timeline2 />
+        </div>
 
         <main id="main">
           <section id="team" class="team">
@@ -95,7 +97,7 @@
 
           </section>
 
-          <section>
+          <section >
             <Timeline />
           </section>
         </main>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <Navbar /> -->
+        <Navbar />
         <slot />
 
  <!-- Vendor JS Files -->

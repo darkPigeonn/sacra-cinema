@@ -1,37 +1,32 @@
 <template>
    <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center ">
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
-                            <div class="d-flex justify-content-center">
-                                <div class="profile bg-gradient-primary-to-secondary " @click="playVideo">
-                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <video autoplay loop nclick="this.play();arguments[0].preventDefault();" class="hero-video" ref="videoPlayer">
-                                        <source :src="videoSource" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                
-                                </div>
-                            </div>
+        <div class="row gx-5 align-items-center ">
+            <div class="col-xxl-7">
+                <div class="container2">
+                    <div class="wrapper">
+                        <div class="content2">
+                            <iframe width="100%" height="100%" :src="'https://www.youtube.com/embed/J8YHCGOjWN8?autoplay=1'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;repeat" allowfullscreen></iframe>
                         </div>
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                                <div class="fs-3 fw-light text-muted">RD. Robertus Theo Elno R.</div>
-                                <h1 class="display-3 fw-bolder">
-                                    <span class="">Sacra Cinema</span>
-                                </h1>
-                                    <p class="">"Dengan demikian, baik film dan proses pembuatan filmnya pun dapat menggambarkan penghayatan akan tema tahunan <b> Keuskupan Surabaya
-                                    </b> yaitu <b>
-                                        Gereja Satu Kudus Katolik dan Apostolik.
-                                    </b> "</p>
-
-                            </div>
-                        </div>
-                       
                     </div>
                 </div>
+            </div>
+            <div class="col-xxl-5" data-aos="fade-left">
+                <!-- Header text content-->
+                <div class="text-center text-xxl-start">
+                    <div class="fs-3 fw-light text-muted">RD. Robertus Theo Elno R.</div>
+                    <h1 class="display-3 fw-bolder">
+                        <span class="">Sacra Cinema</span>
+                    </h1>
+                        <p class="">"Dengan demikian, baik film dan proses pembuatan filmnya pun dapat menggambarkan penghayatan akan tema tahunan <b> Keuskupan Surabaya
+                        </b> yaitu <b>
+                            Gereja Satu Kudus Katolik dan Apostolik.
+                        </b> "</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </template>
 
 
@@ -40,7 +35,7 @@ export default {
   data() {
         return {
             isMuted :true,
-      videoSource: '/assets/videos/img.mp4'
+      videoSource: 'J8YHCGOjWN8'
     }
     },
     methods: {
@@ -49,7 +44,7 @@ export default {
       video.play();
     }
   }
- 
+
 
 }
 </script>
@@ -61,10 +56,34 @@ export default {
 
 
 }
+iframe {
+    width: 100%;
+    height: 20vh;
+}
 @media only screen and (min-width: 768px) {
     .profile {
         width: 50%;
         margin-top: 20px;
     }
   }
+  .container2{
+
+height:100%;
+}
+.wrapper {
+  margin: 0 10px; /* Tambahkan margin kiri dan kanan sesuai kebutuhan Anda */
+}
+.content2 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Rasio 16:9 (9 / 16 * 100) */
+}
+.content2 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>

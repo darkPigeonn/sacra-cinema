@@ -1,12 +1,18 @@
 <template>
     <nav class="navbar">
-      <button class="toggle-btn" @click="toggleNavbar">
-        <i class="fas fa-bars" v-if="!navbarOpen"></i>
-        <i class="fas fa-times" v-else></i>
-      </button>
+      <div class="burger-menu">
+
+        <button class="toggle-btn" @click="toggleNavbar">
+          <div>
+            <i class="fas fa-bars" v-if="!navbarOpen"></i>
+            <i class="fas fa-times" v-else></i>
+          </div>
+        </button>
+
+      </div>
       <ul class="navbar-menu" :class="{ 'navbar-open': navbarOpen }">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Panitia</a></li>
+        <li><a href="/">Beranda</a></li>
+        <li><a href="/">Tentang</a></li>
         <li><a href="#">Hubungi Kami</a></li>
       </ul>
     </nav>
@@ -37,7 +43,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-   
+
     top: 0;
     left: 0;
     right: 0; /* agar navbar menutup di seluruh lebar layar */
@@ -53,11 +59,17 @@
     font-size: 1.2rem;
   }
 
+  .burger-menu{
+    width: 100%;
+  }
+
   .toggle-btn {
+
     background-color: transparent;
     color: #C6972D;
     border: none;
     cursor: pointer;
+    float: right;
   }
 
   .navbar-menu {
@@ -83,9 +95,16 @@
     top: 50px;
     left: 0;
     right: 0; /* agar menu menutup di seluruh lebar layar */
-    background-color: #333;
+    background-color: #C6972D;
     transition: transform 0.3s ease;
     transform: translateY(0);
+
+
+  }
+  .navbar-menu.navbar-open li a {
+
+    color: white;
+
   }
 
   .navbar-menu:not(.navbar-open) {

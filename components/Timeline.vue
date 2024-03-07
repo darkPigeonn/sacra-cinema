@@ -1,5 +1,5 @@
 <template>
-    <body>
+    <div data-aos="zoom-in">
         <div class="title">
             <h2>Agenda Sacra Cinema</h2>
         </div>
@@ -23,6 +23,8 @@
                     <p>
                         Pendalaman Tema & Sacra Cinema</p>
 
+                    <NuxtLink href="/timelines/bootcamp?date=8" class="y-2 mb-5 " style="float: right;color:#e00303 ;">Lihat Lebih Lanjut...</NuxtLink>
+
                 </div>
             </div>
             <div class="checkpoint">
@@ -30,6 +32,7 @@
                     <span>10 Maret 2024</span>
                     <h2>Bootcamp</h2>
                     <p>Pendalaman Materi Dasar Pembuatan Film</p>
+                    <NuxtLink href="/timelines/bootcamp?date=10" class="y-2 mb-5 " style="float: right;color:#e00303 ;">Lihat Lebih Lanjut...</NuxtLink>
 
                 </div>
             </div>
@@ -62,7 +65,7 @@
                 </div>
             </div>
         </div>
-    </body>
+    </div>
 </template>
 
 

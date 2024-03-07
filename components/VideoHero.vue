@@ -8,7 +8,7 @@
   export default {
     data() {
       return {
-        videoUrl: "/assets/videos/img.mp4"
+        videoUrl: "https://youtu.be/J8YHCGOjWN8?si=sgzk8mCb_Y9MHf6d"
       };
     }
   };
