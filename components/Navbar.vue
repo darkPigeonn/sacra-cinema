@@ -10,10 +10,12 @@
         </button>
 
       </div>
-      <ul class="navbar-menu" :class="{ 'navbar-open': navbarOpen }">
+      <ul class="navbar-menu" :class="{ 'navbar-open': navbarOpen }"  >
+
         <li><a href="/">Beranda</a></li>
         <li><a href="/">Tentang</a></li>
         <li><a href="#">Hubungi Kami</a></li>
+
       </ul>
     </nav>
   </template>
@@ -22,18 +24,25 @@
   export default {
     data() {
       return {
-        navbarOpen: false
+        navbarOpen: false,
+        animation : ''
       };
     },
+
     methods: {
       toggleNavbar() {
         this.navbarOpen = !this.navbarOpen;
+        this.animation = 'fade-left'
       }
     }
   };
   </script>
 
   <style scoped lang="scss">
+  .li-mobile {
+    border-bottom: 0.2px solid black;
+
+  }
   .navbar {
     position: static;
     height: 50px;
@@ -93,13 +102,13 @@
     flex-direction: column;
     position: absolute;
     top: 50px;
-    left: 0;
+
     right: 0; /* agar menu menutup di seluruh lebar layar */
     background-color: #C6972D;
     transition: transform 0.3s ease;
     transform: translateY(0);
-
-
+    border-radius: 5px 0px 0px 5px;
+    width: 60%;
   }
   .navbar-menu.navbar-open li a {
 

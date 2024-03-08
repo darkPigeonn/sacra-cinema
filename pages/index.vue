@@ -108,6 +108,12 @@
 p h4 span{
   color : #C6972D
 }
+.social{
+  display: none;
+}
+.member-info {
+  display: none;
+}
 .member-info h4{
   color : #C6972D!important;
 }

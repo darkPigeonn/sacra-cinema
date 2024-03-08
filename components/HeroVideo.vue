@@ -1,7 +1,7 @@
 <template>
    <div class="container px-5 pb-5">
         <div class="row gx-5 align-items-center ">
-            <div class="col-xxl-7">
+            <div class="col-xxl-7 col-12">
                 <div class="container2">
                     <div class="wrapper">
                         <div class="content2">
@@ -10,7 +10,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-5" data-aos="fade-left">
+            <div class="col-xxl-5 col-12" data-aos="fade-left">
                 <!-- Header text content-->
                 <div class="text-center text-xxl-start">
                     <div class="fs-3 fw-light text-muted">RD. Robertus Theo Elno R.</div>
