@@ -18,6 +18,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/png', href: '/assets/images/logo.png' }]
     },
   },
+
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
     // "assets/vendor/aos/aos.css",
@@ -31,9 +32,7 @@ export default defineNuxtConfig({
     "public/assets/scss/main.scss",
 
   ],
-  modules: [
-    'nuxt-aos'
-  ],
+  modules: ['nuxt-aos', "@nuxt/ui"],
   aos: {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function

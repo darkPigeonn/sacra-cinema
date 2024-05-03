@@ -1,7 +1,9 @@
 <template>
     <div>
-        <Hero />
-        <HeroVideo />
+      <Hero />
+      <Carousel class="my-4"/>
+      <hr>
+      <HeroVideo />
 
         <div data-aos="flip-up">
           <Timeline2 />

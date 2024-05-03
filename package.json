@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.15.2",
     "bootstrap": "^5.3.3",
     "compass": "^0.1.1",
     "compass-mixins": "^0.12.12",
