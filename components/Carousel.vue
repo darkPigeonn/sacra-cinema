@@ -18,6 +18,9 @@ const items = [
   'assets/image/38.png',
   'assets/image/39.png',
   'assets/image/40.png',
+  'assets/image/41.png',
+  'assets/image/42.png',
+  'assets/image/43.png',
  
 ]
 </script>
