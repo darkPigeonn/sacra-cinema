@@ -13,7 +13,7 @@ const items = [
   'assets/image/33.png',
   'assets/image/34.png',
   'assets/image/35.png',
-  'assets/image/36.png',
+  'assets/image/366.png',
   'assets/image/37.png',
   'assets/image/38.png',
   'assets/image/39.png',
