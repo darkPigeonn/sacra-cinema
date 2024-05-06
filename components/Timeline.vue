@@ -6,13 +6,13 @@
         <div class="timeline">
             <div class="checkpoint">
                 <div>
-                    <span>17 Februari 2023</span>
+                    <span>17 Februari 2024</span>
                     <h2>Publikasi</h2>
                 </div>
             </div>
             <div class="checkpoint">
                 <div>
-                    <span>18 Februari 2023 - 3 Maret 2024</span>
+                    <span>18 Februari 2024 - 3 Maret 2024</span>
                     <h2>Pendaftaran</h2>
                 </div>
             </div>
