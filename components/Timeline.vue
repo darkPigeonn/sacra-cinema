@@ -3,7 +3,11 @@
         <div class="title">
             <h2>Agenda Sacra Cinema</h2>
         </div>
-        <div class="timeline">
+        <div class="page-menu-section text-center mt-3">
+            <button :class="['btn', 'btn-primary-custom', { 'active': viewMode === 1 }, 'mx-2', 'p-2']"  @click="setViewMode(1)">Sacra Cinema 2025</button>
+            <button :class="['btn', 'btn-primary-custom', { 'active': viewMode === 0}, 'mx-2', 'p-2']"   @click="setViewMode(0)">Sacra Cinema 2024</button>
+        </div>
+        <div class="timeline" v-if="viewMode == 0">
             <div class="checkpoint">
                 <div>
                     <span>17 Februari 2024</span>
@@ -68,10 +72,57 @@
                 </div>
             </div>
         </div>
+        <div class="timeline" v-if="viewMode == 1">
+            <div class="checkpoint">
+                <div>
+                    <span>Agustus 2024</span>
+                    <h2>Pendaftaran</h2>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <span>September 2024 - Oktober 2024</span>
+                    <h2>Bootcamp</h2>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <span>November 2024 - Maret 2025</span>
+                    <h2>Produksi Film & Coaching Clinic</h2>
+                   
+                    <!-- <NuxtLink href="/timelines/bootcamp?date=8" class="y-2 mb-5 " style="float: right;color:#e00303 ;">Lihat Lebih Lanjut...</NuxtLink> -->
+
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <span>April 2025</span>
+                    <h2>Pengumpulan dan Penjurian Film</h2>
+                    <!-- <p>Pendalaman Materi Dasar Pembuatan Film</p>
+                    <NuxtLink href="/timelines/bootcamp?date=10" class="y-2 mb-5 " style="float: right;color:#e00303 ;">Lihat Lebih Lanjut...</NuxtLink> -->
+
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <span>Mei 2025</span>
+                    <h2>Awarding Sacra Cinema</h2>
+              
+                </div>
+            </div>
+          
+        </div>
     </div>
 </template>
 
-
+<script setup lang="ts">
+import { ref } from 'vue';
+var viewMode = ref(1);
+const setViewMode = (param: number) => {
+   
+    viewMode.value = param;
+}
+</script>
 <style scoped>
 body{
     margin : 0;
@@ -204,5 +255,14 @@ p{
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+.btn-primary-custom{
+    border:1px solid #C6972D;
+    color: grey;
+}
+.active{
+    background-color: #C6972D !important;
+    color: black;
 }
 </style>
