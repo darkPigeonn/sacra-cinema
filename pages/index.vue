@@ -106,7 +106,11 @@
         <Sponsor />
     </div>
 </template>
-
+<script lang="ts" setup>
+definePageMeta({
+  title: 'Beranda'
+})
+</script>
 <style lang="scss" scoped>
 p h4 span{
   color : #C6972D
