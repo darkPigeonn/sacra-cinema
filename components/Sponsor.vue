@@ -1,10 +1,36 @@
 <template>
   <div class="tema" data-aos="zoom-in">
-      <div class="title">
-          <h3 class="mb-5">Didukung oleh</h3>
+      <div class="title mx-5">
+          <h3 class="mb-2">Didukung oleh : </h3>
+          <div class="row mb-5">
+            <div class="col">
+              <h4>Talent dan Announcer Awarding</h4>
+              <div class="d-flex justify-content-center align-items-center">
+                <div v-for="(image, index) in items" :key="index">
+                  <img :src="image" width="50" class="mx-2">
+                </div>
+              </div>
+            </div>
+           
+          </div>
           <div class="row">
-            <div v-for="item in items" class="col-4 col-sm-2">
-              <img class="px-2" :src="item"/>
+            <div class="col">
+              <h4>Sponsorship & Donatur</h4>
+              <div class="d-lg-none">
+                <div class="row">
+                  <div v-for="item in items2" class="col-4 d-flex align-items-center">
+                      <img :src="item.url"  width="100" class="mx-2"/>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none d-lg-block">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div v-for="item in items2" class="mb-5">
+                      <img :src="item.url"  width="80" class="mx-2"/>
+                  </div>
+                </div>
+              </div>
+            
             </div>
           </div>
       </div>
@@ -14,24 +40,69 @@
 
 <script setup lang="ts">
 const items = [
-  'assets/images/kolaborasi/1.png',
-  'assets/images/kolaborasi/2.png',
-  'assets/images/kolaborasi/3.png',
-  'assets/images/kolaborasi/4.png',
-  'assets/images/kolaborasi/5.png',
-  'assets/images/kolaborasi/6.png',
-  'assets/images/kolaborasi/7.png',
-  'assets/images/sponsor/sp1.png',
-  'assets/images/sponsor/sp2.jpeg',
-  'assets/images/sponsor/sp3.png',
-  'assets/images/sponsor/sp4.jpg',
-  'assets/images/sponsor/sp5.png',
+  'assets/images/kolaborasisekolah/1.png',
+  'assets/images/kolaborasisekolah/2.jpg',
+  'assets/images/kolaborasisekolah/3.png',
+  'assets/images/kolaborasisekolah/4.png',
+  'assets/images/kolaborasisekolah/5.png',
+  'assets/images/kolaborasisekolah/6.jpeg',
+  'assets/images/kolaborasisekolah/7.png',
+
+]
+const items2 = [
+  {url : 'assets/images/sponsor/sp1.png',
+    type : 'images'
+  },
+  {url : 'assets/images/sponsor/sp2.jpeg',
+    type : 'images'
+  },
+  {url : 'assets/images/sponsor/sp3.png',
+    type : 'images'
+  },
+  {url : 'assets/images/sponsor/sp5.png',
+    type : 'images'
+  },
+  {url : 'assets/images/sponsor/sp6.png',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp7.png',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp8.jpeg',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp9.png',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp10.jpeg',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp11.png',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp12.png',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp13.png',
+    type : 'images'
+  },
+  {
+    url: 'assets/images/sponsor/sp14.png',
+    type : 'images'
+  },
+  
 ]
 </script>
 <style scoped>
 
 .tema{
-  
   font-family: sans-serif;
  
   color: #C6972D;
@@ -147,4 +218,9 @@ p{
       transform: translateX(-50%);
   }
 }
+.max-20 {
+  max-width: 20%;
+}
+/* Optional: To prevent the images from stretching vertically */
+
 </style>

@@ -59,9 +59,12 @@
                 </div>
             </div>
             <div class="checkpoint">
+                
                 <div>
                     <span>11 Mei 2024</span>
                     <h2>Awarding - Hari Komunikasi Sosial Sedunia</h2>
+                    <NuxtLink href="https://www.youtube.com/watch?v=yiBjHwjzp4E" target="_blank" class="y-2 mb-5 " style="float: right;color:#e00303 ;">Lihat Lebih Lanjut...</NuxtLink>
+
                 </div>
             </div>
         </div>
