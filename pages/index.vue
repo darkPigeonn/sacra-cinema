@@ -103,7 +103,7 @@
             <Timeline />
           </section>
         </main>
-        <Sponsor />
+        <!-- <Sponsor /> -->
     </div>
 </template>
 <script lang="ts" setup>

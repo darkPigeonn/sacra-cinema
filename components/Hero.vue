@@ -47,8 +47,9 @@ export default {
 .hero-video {
     width: 100%;
     border-radius: 50px;
-
-
+}
+img {
+    max-width: 900px;
 }
 @media only screen and (min-width: 768px) {
     .profile {
