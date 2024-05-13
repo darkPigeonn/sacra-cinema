@@ -31,7 +31,7 @@ const items = [
       <p style="color:#C6972D">Karya Film Pendek Sacra Cinema</p>
 
     </header>
-    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/5 lg:basis-1/6' }" indicators class="rounded-lg overflow-hidden">
+    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/5 lg:basis-1/4' }" indicators class="rounded-lg overflow-hidden">
       <img :src="item" class="w-full" draggable="false">
     </UCarousel>
   </div>
