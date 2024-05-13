@@ -103,6 +103,7 @@
             <Timeline />
           </section>
         </main>
+        <Sponsor />
     </div>
 </template>
 

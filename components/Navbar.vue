@@ -14,6 +14,7 @@
 
         <li><a href="/">Beranda</a></li>
         <li><a href="/">Tentang</a></li>
+        <!-- <li><a href="/sponsorship">Sponsorship</a></li> -->
         <li><a href="#">Hubungi Kami</a></li>
 
       </ul>
