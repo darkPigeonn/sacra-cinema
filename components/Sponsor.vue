@@ -3,8 +3,8 @@
       <div class="title">
           <h3 class="mb-5">Didukung oleh</h3>
           <div class="row">
-            <div v-for="item in items" class="col-2">
-              <img :src="item"/>
+            <div v-for="item in items" class="col-4 col-sm-2">
+              <img class="px-2" :src="item"/>
             </div>
           </div>
       </div>
@@ -14,6 +14,13 @@
 
 <script setup lang="ts">
 const items = [
+  'assets/images/kolaborasi/1.png',
+  'assets/images/kolaborasi/2.png',
+  'assets/images/kolaborasi/3.png',
+  'assets/images/kolaborasi/4.png',
+  'assets/images/kolaborasi/5.png',
+  'assets/images/kolaborasi/6.png',
+  'assets/images/kolaborasi/7.png',
   'assets/images/sponsor/sp1.png',
   'assets/images/sponsor/sp2.jpeg',
   'assets/images/sponsor/sp3.png',
@@ -22,14 +29,11 @@ const items = [
 ]
 </script>
 <style scoped>
-img {
-  max-height: 500px;
-  max-width: 200px;
-}
+
 .tema{
-  margin : 0 25px;
+  
   font-family: sans-serif;
-  padding: 5em;
+ 
   color: #C6972D;
   width: 100%;
 }

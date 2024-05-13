@@ -1,26 +1,26 @@
 <script setup lang="ts">
 const items = [
-  'assets/image/23.png',
-  'assets/image/24.png',
-  'assets/image/25.png',
-  'assets/image/26.png',
-  'assets/image/27.png',
-  'assets/image/28.png',
-  'assets/image/29.png',
-  'assets/image/30.png',
-  'assets/image/31.png',
-  'assets/image/32.png',
-  'assets/image/33.png',
-  'assets/image/34.png',
-  'assets/image/35.png',
-  'assets/image/366.png',
-  'assets/image/37.png',
-  'assets/image/38.png',
-  'assets/image/39.png',
-  'assets/image/40.png',
-  'assets/image/41.png',
-  'assets/image/42.png',
-  'assets/image/43.png',
+  'assets/images/poster/20.jpg',
+  'assets/images/poster/21.jpg',
+  'assets/images/poster/22.jpg',
+  'assets/images/poster/23.jpg',
+  'assets/images/poster/24.jpg',
+  'assets/images/poster/25.jpg',
+  'assets/images/poster/26.jpg',
+  'assets/images/poster/27.jpg',
+  'assets/images/poster/28.jpg',
+  'assets/images/poster/29.jpg',
+  'assets/images/poster/30.jpg',
+  'assets/images/poster/31.jpg',
+  'assets/images/poster/32.jpg',
+  'assets/images/poster/33.jpg',
+  'assets/images/poster/34.jpg',
+  'assets/images/poster/35.jpg',
+  'assets/images/poster/36.jpg',
+  'assets/images/poster/37.jpg',
+  'assets/images/poster/38.jpg',
+  'assets/images/poster/39.jpg',
+  'assets/images/poster/40.jpg'
  
 ]
 </script>
@@ -31,7 +31,7 @@ const items = [
       <p style="color:#C6972D">Karya Film Pendek Sacra Cinema</p>
 
     </header>
-    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/2 lg:basis-1/3' }" indicators class="rounded-lg overflow-hidden">
+    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/5 lg:basis-1/6' }" indicators class="rounded-lg overflow-hidden">
       <img :src="item" class="w-full" draggable="false">
     </UCarousel>
   </div>
@@ -41,5 +41,11 @@ const items = [
   .nominasi {
     padding: 10px 0px;
     
+  }
+  @media only screen and (min-width: 768px) {
+    .responsive-img {
+        width: 50%;
+      
+    }
   }
 </style>
