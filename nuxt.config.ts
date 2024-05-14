@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
- 
+  ssr: true,
+  target: 'static',
   devtools: { enabled: true },
   app : {
     head: {
@@ -62,18 +64,13 @@ export default defineNuxtConfig({
 
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
-    // "assets/vendor/aos/aos.css",
-    // // "assets/vendor/bootstrap/css/bootstrap.min.css",
-    // "assets/vendor/bootstrap-icons/bootstrap-icons.css",
-    // "assets/vendor/glightbox/css/glightbox.min.css",
-    // "assets/vendor/remixicon/remixicon.css",
-    // "assets/vendor/swiper/swiper-bundle.min.css",
-
     "public/assets/css/style.css",
     "public/assets/scss/main.scss",
-
   ],
+ 
+
   modules: ['nuxt-aos', "@nuxt/ui", '@nuxtjs/sitemap'],
+ 
   aos: {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -94,5 +91,16 @@ export default defineNuxtConfig({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  },
+  runtimeConfig: {
+    private: {
+      CONTENTFUL_CONTENT_KEY: process.env.CONTENTFUL_CONTENT_KEY,
+      CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
+      CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
+    },
+    public: {
+      contentfulSpaceId: process.env.CONTENTFUL_SPACE_ID,
+      contentfulAccessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
     }
+  }
 })
