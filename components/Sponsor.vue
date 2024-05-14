@@ -99,6 +99,10 @@ const items2 = [
     url: 'assets/images/sponsor/sp14.png',
     type : 'images'
   },
+  {
+    url: 'assets/images/sponsor/sp15.jpeg',
+    type : 'images'
+  },
   
 ]
 </script>
