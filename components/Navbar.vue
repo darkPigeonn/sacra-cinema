@@ -16,6 +16,13 @@
         <li><a href="/">Tentang</a></li>
         <!-- <li><a href="/sponsorship">Sponsorship</a></li> -->
         <li><a href="#">Hubungi Kami</a></li>
+        <li class="dropdown" @click="toggleDropdown">
+          <a href="#">Galeri</a>
+          <ul v-if="dropdownOpen" class="dropdown-menu">
+            <li><a href="/galleries/awardings">Awarding 2024</a></li>
+           
+          </ul>
+        </li>
 
       </ul>
     </nav>
@@ -26,7 +33,8 @@
     data() {
       return {
         navbarOpen: false,
-        animation : ''
+        animation: '',
+        dropdownOpen: false,
       };
     },
 
@@ -34,7 +42,11 @@
       toggleNavbar() {
         this.navbarOpen = !this.navbarOpen;
         this.animation = 'fade-left'
-      }
+        
+      },
+      toggleDropdown() {
+      this.dropdownOpen = !this.dropdownOpen;
+    }
     }
   };
   </script>
@@ -134,5 +146,41 @@
       margin-right: 20px;
       margin-bottom: 0;
     }
+  }
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #C6972D !important;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+  }
+  
+  .dropdown-menu li {
+    border-top: 1px solid #ffffff;
+  }
+  
+  .dropdown-menu li:first-child {
+    border-top: none;
+  }
+  
+  .dropdown-menu li a {
+    color: #b5831e90;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu li a:hover {
+  color: #B5821E !important;
   }
   </style>
