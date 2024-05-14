@@ -131,6 +131,9 @@ export default{
         const findItems = this.timelinesData.find(item=> item.label == date);
         this.timelines = findItems.items
         this.label = findItems.date
+  },
+  head: {
+      title : 'Jadwal Bootcamp Sacra Cinema'
     }
 }
 </script>

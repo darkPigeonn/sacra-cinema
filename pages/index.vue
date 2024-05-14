@@ -107,8 +107,19 @@
     </div>
 </template>
 <script lang="ts" setup>
-definePageMeta({
-  title: 'Beranda'
+useHead({
+      title: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024',
+      meta: [
+        { name: 'description', content: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"' },
+        {
+          name: 'keywords',
+          content : 'Sacra Cinema, Keuskupan Surabaya, Komisi Sosial(Komsos), Festival Film'
+        },
+        {
+          name: "og:title",
+          content : "Sacra Cinema - Festival Film Keuskupan Surabaya"
+        }
+  ],
 })
 </script>
 <style lang="scss" scoped>

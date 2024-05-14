@@ -4,51 +4,20 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app : {
     head: {
-      title: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      meta: [
-        { name: 'description', content: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"' }
-      ],
+      
       script: [
         {
           src: 'https://kit.fontawesome.com/94c81be855.js',
           crossorigin: 'anonymous',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/assets/images/logo.png' }]
+     
     },
     
   },
-  site: {
-    url: 'https://sacracinema.keuskupansurabaya.org',
-    name: 'Sacra Cinema',
-    description : 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"'
-  },
-  seo: {
-    automaticDefaults: false,
-    fallbackTitle: false
-
-  },
-  ogImage: {
-    enabled: false
-  },
-  sitemap: {
-    enabled: false
-  },
-  robots: {
-    enabled: false
-  },
-  seoExperiments: {
-    enabled: false
-  },
-  schemaOrg: {
-    enabled: false
-  },
-  linkChecker: {
-    enabled: false
-  },
-  
+ 
 
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
