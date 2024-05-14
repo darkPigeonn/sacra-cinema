@@ -58,8 +58,6 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://sacracinema.keuskupansurabaya.org/',
-    trailingSlash: true
-
   },
 
   css: [
@@ -75,7 +73,7 @@ export default defineNuxtConfig({
     "public/assets/scss/main.scss",
 
   ],
-  modules: ['nuxt-aos', "@nuxt/ui", "@nuxt/sitemap"],
+  modules: ['nuxt-aos', "@nuxt/ui", '@nuxtjs/sitemap'],
   aos: {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
