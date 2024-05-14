@@ -54,9 +54,13 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/png', href: '/assets/images/logo.png' }]
      
     },
-    
   },
- 
+
+  site: {
+    url: 'https://sacracinema.keuskupansurabaya.org/',
+    trailingSlash: true
+
+  },
 
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
@@ -71,7 +75,7 @@ export default defineNuxtConfig({
     "public/assets/scss/main.scss",
 
   ],
-  modules: ['nuxt-aos', "@nuxt/ui"],
+  modules: ['nuxt-aos', "@nuxt/ui", "@nuxt/sitemap"],
   aos: {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
