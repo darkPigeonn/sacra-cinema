@@ -4,8 +4,8 @@
             <h2>Agenda Sacra Cinema</h2>
         </div>
         <div class="page-menu-section text-center mt-3">
-            <button :class="['btn', 'btn-primary-custom', { 'active': viewMode === 1 }, 'mx-2', 'p-2']"  @click="setViewMode(1)">Sacra Cinema 2025</button>
             <button :class="['btn', 'btn-primary-custom', { 'active': viewMode === 0}, 'mx-2', 'p-2']"   @click="setViewMode(0)">Sacra Cinema 2024</button>
+            <button :class="['btn', 'btn-primary-custom', { 'active': viewMode === 1 }, 'mx-2', 'p-2']"  @click="setViewMode(1)">Sacra Cinema 2025</button>
         </div>
         <div class="timeline" v-if="viewMode == 0">
             <div class="checkpoint">
@@ -117,12 +117,12 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-var viewMode = ref(1);
-const setViewMode = (param: number) => {
-   
+var viewMode = ref(0);
+const setViewMode = (param: number) => { 
     viewMode.value = param;
 }
 </script>
+
 <style scoped>
 body{
     margin : 0;

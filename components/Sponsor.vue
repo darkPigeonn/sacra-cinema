@@ -47,6 +47,8 @@ const items = [
   'assets/images/kolaborasisekolah/5.png',
   'assets/images/kolaborasisekolah/6.jpeg',
   'assets/images/kolaborasisekolah/7.png',
+  'assets/images/kolaborasisekolah/8.jpeg',
+  'assets/images/kolaborasisekolah/9.png',
 
 ]
 const items2 = [
