@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-
+  ssr : true,
+  target: 'static',
   devtools: { enabled: true },
   app : {
     head: {
