@@ -21,7 +21,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   const client = createClientFunc({
     space: config.public.contentfulSpaceId        ,
-            accessToken :config.public.contentfulAccessToken,
+     accessToken :config.public.contentfulAccessToken,
   });
 
   return {
