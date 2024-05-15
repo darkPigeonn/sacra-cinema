@@ -1,0 +1,17 @@
+#15 Mei 2024
+- Buat statis website
+  - Generate dulu saat nuxt config
+  - Add netlify.toml
+  - hooks : 
+    'generate:before': async (nuxt) => {
+      const client = createClient({
+        space: nuxt.options.runtimeConfig.public.contentfulSpaceId,
+        accessToken: nuxt.options.runtimeConfig.private.contentfulAccessToken,
+      });
+
+      const entries = await client.getEntries();
+
+      // Simpan data di file statis, misalnya JSON
+      const fs = require('fs');
+      fs.writeFileSync('static/contentful.json', JSON.stringify(entries.items));
+    }
