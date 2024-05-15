@@ -112,7 +112,7 @@
       ogTitle: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024',
       description: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"' ,
       ogDescription: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"' ,
-      ogImage: '/assets/images/logo.png',
+      ogImage: 'https://sacracinema.keuskupansurabaya.org/assets/images/logo.png',
       ogType: 'article',
       ogUrl: 'https://sacracinema.keuskupansurabaya.org/',
       link: [{ rel: 'canonical', href: 'https://sacracinema.keuskupansurabaya.org/' }],

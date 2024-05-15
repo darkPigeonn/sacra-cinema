@@ -1,8 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
+interface Article {
+  slug: string;
+}
+interface News {
+  slug: string;
+}
 export default defineNuxtConfig({
-  ssr : true,
-  target: 'static',
   devtools: { enabled: true },
   app : {
     head: {
@@ -93,14 +96,11 @@ export default defineNuxtConfig({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   },
   runtimeConfig: {
-    private: {
-      CONTENTFUL_CONTENT_KEY: process.env.CONTENTFUL_CONTENT_KEY,
-      CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
-      CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
-    },
-    public: {
-      contentfulSpaceId: process.env.CONTENTFUL_SPACE_ID,
-      contentfulAccessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    }
-  }
+    APP_ID: process.env.APP_ID,
+    APP_SECRET: process.env.APP_SECRET,
+    PARTNER: process.env.PARTNER,
+
+  },
+  
+ 
 })

@@ -19,7 +19,7 @@
         <li class="dropdown" @click="toggleDropdown">
           <a href="#">Galeri</a>
           <ul v-if="dropdownOpen" class="dropdown-menu">
-            <li><a href="/galleries/awardings">Awarding 2024</a></li>
+            <li><a href="/galleries/awarding-2024">Awarding 2024</a></li>
            
           </ul>
         </li>
