@@ -1,9 +1,9 @@
 <script setup>
 import { useNuxtApp } from 'nuxt/app'
-const { $contentfulClient } = useNuxtApp();
-const data = await $contentfulClient.getEntries({ content_type: 'awarding2024' }).then(function (entries) {
-  return entries.items
-})
+// const { $contentfulClient } = useNuxtApp();
+// const data = await $contentfulClient.getEntries({ content_type: 'awarding2024' }).then(function (entries) {
+//   return entries.items
+// })
 
 
 </script>
