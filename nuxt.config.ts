@@ -48,16 +48,21 @@ export default defineNuxtConfig({
           property: "og:locale",
           content : 'id_ID'
         },
-       
+
       ],
       script: [
         {
           src: 'https://kit.fontawesome.com/94c81be855.js',
           crossorigin: 'anonymous',
         },
+        {
+          src : "https://static.elfsight.com/platform/platform.js",
+          'data-use-service-core': true,
+          defer: true,
+        }
       ],
       link: [{ rel: 'icon', type: 'image/png', href: '/assets/images/logo.png' }]
-     
+
     },
   },
 
@@ -70,10 +75,10 @@ export default defineNuxtConfig({
     "public/assets/css/style.css",
     "public/assets/scss/main.scss",
   ],
- 
+
 
   modules: ['nuxt-aos', "@nuxt/ui", '@nuxtjs/sitemap'],
- 
+
   aos: {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -101,6 +106,6 @@ export default defineNuxtConfig({
     PARTNER: process.env.PARTNER,
 
   },
-  
- 
+
+
 })
