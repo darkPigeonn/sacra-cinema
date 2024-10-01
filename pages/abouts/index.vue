@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div v-for="(item, index) in 12" :key="index" class="image-container">            
-            <img class="responsive-img" :src="`/assets/images/tor/${index + 2}.png`" />
+            <img class="responsive-img" :src="`/assets/images/tor/tor(${index+2}).jpg`" />
         </div>
     </div>
 </template>

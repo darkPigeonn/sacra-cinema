@@ -73,41 +73,10 @@
             </div>
         </div>
         <div class="timeline" v-if="viewMode == 1">
-            <div class="checkpoint">
+            <div v-for="(item, index) in list2025" :key="index" class="checkpoint">
                 <div>
-                    <span>Agustus 2024</span>
-                    <h2>Pendaftaran</h2>
-                </div>
-            </div>
-            <div class="checkpoint">
-                <div>
-                    <span>September 2024 - Oktober 2024</span>
-                    <h2>Bootcamp</h2>
-                </div>
-            </div>
-            <div class="checkpoint">
-                <div>
-                    <span>November 2024 - Maret 2025</span>
-                    <h2>Produksi Film & Coaching Clinic</h2>
-                   
-                    <!-- <NuxtLink href="/timelines/bootcamp?date=8" class="y-2 mb-5 " style="float: right;color:#e00303 ;">Lihat Lebih Lanjut...</NuxtLink> -->
-
-                </div>
-            </div>
-            <div class="checkpoint">
-                <div>
-                    <span>April 2025</span>
-                    <h2>Pengumpulan dan Penjurian Film</h2>
-                    <!-- <p>Pendalaman Materi Dasar Pembuatan Film</p>
-                    <NuxtLink href="/timelines/bootcamp?date=10" class="y-2 mb-5 " style="float: right;color:#e00303 ;">Lihat Lebih Lanjut...</NuxtLink> -->
-
-                </div>
-            </div>
-            <div class="checkpoint">
-                <div>
-                    <span>Mei 2025</span>
-                    <h2>Awarding Sacra Cinema</h2>
-              
+                    <span>{{item.date}}</span>
+                    <h2>{{ item.event }}</h2>
                 </div>
             </div>
           
@@ -121,6 +90,58 @@ var viewMode = ref(0);
 const setViewMode = (param: number) => { 
     viewMode.value = param;
 }
+
+const list2025 = [
+{
+    'event' : "Diskusi Film dan Launching Sacra Cinema 2025",
+    "date":"31 Agustus 2024"
+    
+},
+{
+    'event' : "Pendaftaran",
+    "date":"1 Oktober - 3 November 2024"
+    
+},
+{
+    'event' : "Meet & Brief - Technical Meeting (online).",
+    "date":"6 November 2024"
+    
+},
+{
+    'event' : "Produksi Film",
+    "date":"November 2024-Maret 2025"
+},
+{
+    'event' : "Pengumpulan Film",
+    "date":"6 April 2025"
+    
+},
+{
+    'event' : "Penjurian",
+    "date":"April-Mei 2025"
+    
+},
+{
+    'event' : "Gala Premiere (Hari Komsos Sedunia Ke-59)",
+    "date":"1 Juni 2025"
+    
+},
+{
+    'event' : "Awarding Film Sacra Cinema",
+    "date":"7 Juni 2025"
+    
+},
+{
+    'event' : "Pemutaran Film Nominasi Best Film di Bioskop",
+    "date":"14 Juni 2025"
+    
+},
+{
+    'event' : "Diskusi Film dan Launching Sacra Cinema 2026",
+    "date":"Agustus 2025"
+    
+},
+]
 </script>
 
 <style scoped>
