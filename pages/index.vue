@@ -118,7 +118,7 @@
       ogImage: 'https://sacracinema.keuskupansurabaya.org/assets/images/logo.png',
       ogType: 'article',
       ogUrl: 'https://sacracinema.keuskupansurabaya.org/',
-      link: [{ rel: 'canonical', href: 'https://sacracinema.keuskupansurabaya.org/' }],
+     
     });
 </script>
 <style lang="scss" scoped>

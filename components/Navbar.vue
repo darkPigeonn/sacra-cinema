@@ -13,13 +13,14 @@
       <ul class="navbar-menu" :class="{ 'navbar-open': navbarOpen }"  >
 
         <li><a href="/">Beranda</a></li>
-        <li><a href="/">Tentang</a></li>
+        <li><a href="/abouts">Tentang</a></li>
         <!-- <li><a href="/sponsorship">Sponsorship</a></li> -->
         <li><a href="#">Hubungi Kami</a></li>
         <li class="dropdown" @click="toggleDropdown">
           <a href="#">Galeri</a>
           <ul v-if="dropdownOpen" class="dropdown-menu">
-            <li><a href="/galleries/awarding-2024">Awarding 2024</a></li>
+            <!-- <li><a href="/galleries/awarding-2024">Awarding 2024</a></li> -->
+            <li><a href="/galleries/activity">Kegiatan</a></li>
            
           </ul>
         </li>
