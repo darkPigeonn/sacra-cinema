@@ -113,12 +113,12 @@ const list2025 = [
 },
 {
     'event' : "Pengumpulan Film",
-    "date":"6 April 2025"
+    "date":"6 April 2025 - 11 Mei 2025"
     
 },
 {
     'event' : "Penjurian",
-    "date":"April-Mei 2025"
+    "date":"Mei 2025"
     
 },
 {
@@ -129,11 +129,6 @@ const list2025 = [
 {
     'event' : "Awarding Film Sacra Cinema",
     "date":"7 Juni 2025"
-    
-},
-{
-    'event' : "Pemutaran Film Nominasi Best Film di Bioskop",
-    "date":"14 Juni 2025"
     
 },
 {
