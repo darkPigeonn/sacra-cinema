@@ -1,4 +1,17 @@
 <script setup lang="ts">
+
+import { useSeoMeta } from '#imports'
+
+useSeoMeta({
+  title: 'Karya Film Pendek Sacra Cinema 2025 - Koleksi Poster Film Pendek Terbaik',
+  description: 'Lihat koleksi poster film pendek terbaik dari Sacra Cinema 2025. Gallery lengkap karya film pendek dengan gambar berkualitas tinggi.',
+  keywords: ['film pendek', 'Sacra Cinema', 'poster film', 'film pendek 2025', 'koleksi poster film', 'gallery film pendek'],
+  author: 'Sacra Cinema',
+  ogImage: 'https://yourdomain.com/assets/images/poster2025/poster_01.jpg',
+  canonical: 'https://sacracinema.keuskupansurabaya.org/karya-film-pendek-sacra-cinema-2025',
+})
+
+
 // const itemsOld = [
 //   'assets/images/poster/20.jpg',
 //   'assets/images/poster/21.jpg',
@@ -66,7 +79,7 @@ const items = [
 
     </header>
     <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/5 lg:basis-1/4' }" indicators class="rounded-lg overflow-hidden">
-      <img :src="item" class="w-full" draggable="false">
+      <img :src="item" alt="Poster Film Pendek Sacra Cinema 2025" class="w-full" draggable="false">
     </UCarousel>
   </div>
 </template>

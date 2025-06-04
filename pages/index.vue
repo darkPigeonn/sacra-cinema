@@ -118,7 +118,7 @@
       ogImage: 'https://sacracinema.keuskupansurabaya.org/assets/images/logo.png',
       ogType: 'article',
       ogUrl: 'https://sacracinema.keuskupansurabaya.org/',
-     
+      keywords: ['Sacra Cinema', 'Festival Film Keuskupan Surabaya 2024', 'Komisi Komsos', 'Komisi Bidang Formatio', 'Keuskupan Surabaya'],
     });
 </script>
 <style lang="scss" scoped>
