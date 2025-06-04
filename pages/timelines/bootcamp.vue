@@ -156,7 +156,6 @@ $color-2: white;
 $color-3: rgb(168, 50, 121);
 
 /* Fonts */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
