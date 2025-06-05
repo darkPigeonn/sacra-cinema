@@ -1,6 +1,9 @@
-<script setup lang="ts">
+<script setup>
 
 import { useSeoMeta } from '#imports'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 useSeoMeta({
   title: 'Karya Film Pendek Sacra Cinema 2025 - Koleksi Poster Film Pendek Terbaik',
@@ -11,31 +14,6 @@ useSeoMeta({
   canonical: 'https://sacracinema.keuskupansurabaya.org/karya-film-pendek-sacra-cinema-2025',
 })
 
-
-// const itemsOld = [
-//   'assets/images/poster/20.jpg',
-//   'assets/images/poster/21.jpg',
-//   'assets/images/poster/22.jpg',
-//   'assets/images/poster/23.jpg',
-//   'assets/images/poster/24.jpg',
-//   'assets/images/poster/25.jpg',
-//   'assets/images/poster/26.jpg',
-//   'assets/images/poster/27.jpg',
-//   'assets/images/poster/28.jpg',
-//   'assets/images/poster/29.jpg',
-//   'assets/images/poster/30.jpg',
-//   'assets/images/poster/31.jpg',
-//   'assets/images/poster/32.jpg',
-//   'assets/images/poster/33.jpg',
-//   'assets/images/poster/34.jpg',
-//   'assets/images/poster/35.jpg',
-//   'assets/images/poster/36.jpg',
-//   'assets/images/poster/37.jpg',
-//   'assets/images/poster/38.jpg',
-//   'assets/images/poster/39.jpg',
-//   'assets/images/poster/40.jpg'
- 
-// ]
 const items = [
   'assets/images/poster2025/poster_01.jpg',
   'assets/images/poster2025/poster_02.png',
@@ -66,20 +44,30 @@ const items = [
   'assets/images/poster2025/poster_27.jpg',
   'assets/images/poster2025/poster_28.png',
   'assets/images/poster2025/poster_29.png',
-  
-  
 ]
+
+//call data json from assets/dataJson.json
+const myData = (await import('@/assets/dataJson.json')).default;
+
+const getSlug = (title) => {
+  // Mengubah title menjadi slug URL yang aman
+  const slug = title.toLowerCase()
+    .replace(/ /g, '-') // Mengganti spasi dengan dash
+    .replace(/[^\w-]+/g, '') // Menghapus karakter spesial
+  return slug
+}
+
 </script>
 
 <template>
   <div class="nominasi">
     <header class="section-header">
       <p style="color:#C6972D">Karya Film Pendek Sacra Cinema</p>
-      
-
     </header>
-    <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full md:basis-1/5 lg:basis-1/4' }" indicators class="rounded-lg overflow-hidden">
-      <img :src="item" alt="Poster Film Pendek Sacra Cinema 2025" class="w-full" draggable="false">
+    <UCarousel v-slot="{ item }" :items="myData" :ui="{ item: 'basis-full md:basis-1/5 lg:basis-1/4' }" indicators class="rounded-lg overflow-hidden">
+      <NuxtLink :to="`/film/${getSlug(item.title)}`" class="cursor-pointer hover:opacity-90 transition-opacity">
+        <img :src="item.images" :alt="item.title" class="w-full" draggable="false">
+      </NuxtLink>
     </UCarousel>
   </div>
 </template>
@@ -87,12 +75,10 @@ const items = [
 <style scoped>
   .nominasi {
     padding: 10px 0px;
-    
   }
   @media only screen and (min-width: 768px) {
     .responsive-img {
         width: 50%;
-      
     }
   }
 </style>

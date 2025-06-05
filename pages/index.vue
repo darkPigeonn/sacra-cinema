@@ -1,5 +1,9 @@
 <template>
-    <div>
+    <div v-if="isLoading">
+      <LoadingScreen :show="true" />
+    </div>
+    
+    <div v-else>
       <Hero />
       <Carousel class="my-4"/>
       <hr>
@@ -109,17 +113,31 @@
         <Sponsor />
     </div>
 </template>
-<script lang="ts" setup>
- useSeoMeta({
-      title: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024',
-      ogTitle: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024',
-      description: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"' ,
-      ogDescription: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"' ,
-      ogImage: 'https://sacracinema.keuskupansurabaya.org/assets/images/logo.png',
-      ogType: 'article',
-      ogUrl: 'https://sacracinema.keuskupansurabaya.org/',
-      keywords: ['Sacra Cinema', 'Festival Film Keuskupan Surabaya 2024', 'Komisi Komsos', 'Komisi Bidang Formatio', 'Keuskupan Surabaya'],
-    });
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const isLoading = ref(true)
+
+onMounted(() => {
+  if (process.client) {
+    console.log('Halaman dimuat di browser, isLoading:', isLoading.value)
+    setTimeout(() => {
+      isLoading.value = false
+      console.log('Loading selesai, isLoading:', isLoading.value)
+    }, 3000)
+  }
+})
+
+useSeoMeta({
+  title: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024',
+  ogTitle: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024',
+  description: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"',
+  ogDescription: 'Sacra Cinema - Festival Film Keuskupan Surabaya 2024 , Kolaborasi Komisi Komsos dan Komisi Bidang Formatio Keuskupan Surabaya, "Mendorong semangat merasul di media sosial dan membangun jejaring dengan insan pastoral komunikasi sosial paroki"',
+  ogImage: 'https://sacracinema.keuskupansurabaya.org/assets/images/logo.png',
+  ogType: 'article',
+  ogUrl: 'https://sacracinema.keuskupansurabaya.org/',
+  keywords: ['Sacra Cinema', 'Festival Film Keuskupan Surabaya 2024', 'Komisi Komsos', 'Komisi Bidang Formatio', 'Keuskupan Surabaya'],
+})
 </script>
 <style lang="scss" scoped>
 p h4 span{

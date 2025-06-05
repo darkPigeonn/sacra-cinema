@@ -7,6 +7,7 @@ interface News {
 }
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   app : {
     head: {
       charset: 'utf-8',
@@ -72,8 +73,8 @@ export default defineNuxtConfig({
 
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
-    "public/assets/css/style.css",
-    "public/assets/scss/main.scss",
+    "~/assets/css/style.css",
+    
   ],
 
 
